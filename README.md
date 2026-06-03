@@ -18,3 +18,36 @@ Siga este passo a passo simples:
 4. **Execute o código:** Com o notebook aberto, basta ler as instruções de cada etapa e executar as células de código clicando no botão de **Play** ▶️ ao lado de cada bloco (ou selecionando o bloco e apertando `Shift + Enter`).
 
 > 💡 *Dica:* Como o ambiente já está configurado na nuvem do Google, comandos complexos de instalação (`pip install`) não são necessários para as atividades base deste módulo!
+
+
+
+# Simular um arquivo XML com dados de clientes
+xml_content = """<?xml version="1.0" encoding="UTF-8"?>
+<clientes>
+    <cliente>
+        <id>001</id>
+        <nome>João Silva</nome>
+        <pais>Brasil</pais>
+        <moeda>USD</moeda>
+        <valor_contrato>10000</valor_contrato>
+    </cliente>
+    <cliente>
+        <id>002</id>
+        <nome>Maria Santos</nome>
+        <pais>Brasil</pais>
+        <moeda>USD</moeda>
+        <valor_contrato>25000</valor_contrato>
+    </cliente>
+    <cliente>
+        <id>003</id>
+        <nome>Pedro Costa</nome>
+        <pais>Brasil</pais>
+        <moeda>EUR</moeda>
+        <valor_contrato>15000</valor_contrato>
+    </cliente>
+</clientes>
+"""
+
+# Salvar para simular arquivo XML
+with open('clientes.xml', 'w', encoding='utf-8') as f:
+    f.write(xml_content)
