@@ -75,3 +75,5 @@ df_clima_pt.columns = [mapping[c] for c in present]
 
 print('Colunas renomeadas com sucesso!')
 print(df_clima_pt.head())
+
+

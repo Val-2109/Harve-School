@@ -23,7 +23,7 @@ previsoes = dados_clima['results']['forecast']
 df_clima = pd.DataFrame(previsoes)
 
 df_clima_pt = df_clima.copy()
-df_clima_pt = df_clima.copy()
+
 # Algumas respostas podem incluir colunas extras; garantir que temos as 10 esperadas
 if df_clima_pt.shape[1] >= 10:
     df_clima_pt = df_clima_pt.iloc[:, :10]
